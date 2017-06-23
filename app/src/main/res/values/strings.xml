@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LW-ButterKnife-Example</string>
+
+    <string name="str_basic">Changed Basic Text</string>
 </resources>
