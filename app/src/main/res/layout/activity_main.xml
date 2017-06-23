@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="pro.lonelywolf.example.butterknife.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/opt_basic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Basic View"
+        android:textSize="24sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/opt_basic_butterknife"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Basic View (via ButterKnife)"
+        android:textSize="24sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/opt_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Recycler View"
+        android:textSize="24sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/opt_recycler_butterknife"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Recycler View (via ButterKnife)"
+        android:textSize="24sp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/opt_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Fragment"
+        android:textSize="24sp"
+        android:layout_weight="1"/>
 
+    <TextView
+        android:id="@+id/opt_fragment_butterknife"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Fragment (via ButterKnife)"
+        android:textSize="24sp" />
 </LinearLayout>
