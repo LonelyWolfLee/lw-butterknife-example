@@ -8,6 +8,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.basic.BasicActivity;
 import pro.lonelywolf.example.butterknife.basic.BasicViaActivity;
+import pro.lonelywolf.example.butterknife.recycler.RecyclerActivity;
+import pro.lonelywolf.example.butterknife.recycler.RecyclerViaActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.opt_recycler)
     public void recycler() {
-
+        startActivity(new Intent(this, RecyclerActivity.class));
     }
 
     @OnClick(R.id.opt_recycler_butterknife)
     public void recyclerVia() {
-
+        startActivity(new Intent(this, RecyclerViaActivity.class));
     }
 
     @OnClick(R.id.opt_fragment)
