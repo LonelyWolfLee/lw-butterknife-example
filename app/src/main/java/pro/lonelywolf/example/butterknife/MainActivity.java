@@ -7,9 +7,9 @@ import android.os.Bundle;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.basic.BasicActivity;
-import pro.lonelywolf.example.butterknife.basic.BasicViaActivity;
+import pro.lonelywolf.example.butterknife.basic.BasicWithButterKnifeActivity;
 import pro.lonelywolf.example.butterknife.recycler.RecyclerActivity;
-import pro.lonelywolf.example.butterknife.recycler.RecyclerViaActivity;
+import pro.lonelywolf.example.butterknife.recycler.RecyclerWithButterKnifeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.opt_basic_butterknife)
     public void basicVia() {
-        startActivity(new Intent(this, BasicViaActivity.class));
+        startActivity(new Intent(this, BasicWithButterKnifeActivity.class));
     }
 
     @OnClick(R.id.opt_recycler)
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.opt_recycler_butterknife)
     public void recyclerVia() {
-        startActivity(new Intent(this, RecyclerViaActivity.class));
+        startActivity(new Intent(this, RecyclerWithButterKnifeActivity.class));
     }
 
     @OnClick(R.id.opt_fragment)

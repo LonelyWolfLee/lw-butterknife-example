@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.R;
 
-public class BasicViaActivity extends AppCompatActivity {
+public class BasicWithButterKnifeActivity extends AppCompatActivity {
 
     @BindView(R.id.text_change_view)
     TextView changeView;
@@ -24,12 +24,12 @@ public class BasicViaActivity extends AppCompatActivity {
     int colorChanged;
 
     @OnClick(R.id.button_change_text)
-    void changeText(View view) {
+    void changeText() {
         changeView.setText(strChanged);
     }
 
     @OnClick(R.id.button_change_color)
-    void changeColor(View view) {
+    void changeColor() {
         changeView.setBackgroundColor(colorChanged);
     }
 

@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Basic View (via ButterKnife)"
-        android:textSize="24sp"
+        android:text="Basic View (with ButterKnife)"
+        android:textSize="20sp"
         android:layout_weight="1"/>
     <TextView
         android:id="@+id/opt_recycler"
@@ -28,15 +28,15 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="Recycler View"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:layout_weight="1"/>
     <TextView
         android:id="@+id/opt_recycler_butterknife"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="Recycler View (via ButterKnife)"
-        android:textSize="24sp"
+        android:text="Recycler View (with ButterKnife)"
+        android:textSize="20sp"
         android:layout_weight="1"/>
     <TextView
         android:id="@+id/opt_fragment"
@@ -44,7 +44,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:text="Fragment"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:layout_weight="1"/>
 
     <TextView
@@ -53,6 +53,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Fragment (via ButterKnife)"
-        android:textSize="24sp" />
+        android:text="Fragment (with ButterKnife)"
+        android:textSize="20sp" />
 </LinearLayout>

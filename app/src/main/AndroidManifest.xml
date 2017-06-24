@@ -17,9 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".basic.BasicActivity" />
-        <activity android:name=".basic.BasicViaActivity" />
+        <activity android:name=".basic.BasicWithButterKnifeActivity" />
         <activity android:name=".recycler.RecyclerActivity" />
-        <activity android:name=".recycler.RecyclerViaActivity"></activity>
+        <activity android:name=".recycler.RecyclerWithButterKnifeActivity"></activity>
     </application>
 
 </manifest>

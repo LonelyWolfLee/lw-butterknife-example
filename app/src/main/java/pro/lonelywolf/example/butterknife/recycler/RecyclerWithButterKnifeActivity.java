@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import pro.lonelywolf.example.butterknife.R;
 
-public class RecyclerViaActivity extends AppCompatActivity {
+public class RecyclerWithButterKnifeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
