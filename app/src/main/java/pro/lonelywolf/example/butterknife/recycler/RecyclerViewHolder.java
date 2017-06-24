@@ -7,18 +7,18 @@ import android.widget.TextView;
 
 import pro.lonelywolf.example.butterknife.R;
 
-public class RecyclerViewHolder extends RecyclerView.ViewHolder {
+class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
     TextView text;
     Button button;
 
-    public RecyclerViewHolder(View itemView) {
+    RecyclerViewHolder(View itemView) {
         super(itemView);
         text = (TextView) itemView.findViewById(R.id.txt_item);
         button = (Button) itemView.findViewById(R.id.btn_item);
     }
 
-    public void bind(final String item) {
+    void bind(final String item) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

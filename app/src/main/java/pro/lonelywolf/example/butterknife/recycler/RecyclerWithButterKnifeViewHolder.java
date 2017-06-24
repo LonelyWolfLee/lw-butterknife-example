@@ -7,28 +7,25 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.R;
 
-public class RecyclerWithButterKnifeViewHolder extends RecyclerView.ViewHolder {
+class RecyclerWithButterKnifeViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.txt_item)
     TextView text;
     @BindView(R.id.btn_item)
     Button button;
 
-    String item;
-
-    public RecyclerWithButterKnifeViewHolder(View itemView) {
+    RecyclerWithButterKnifeViewHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(itemView);
+        ButterKnife.bind(this, itemView);
     }
 
-    @OnClick(R.id.btn_item)
-    public void clickButton() {
-        text.setText(item);
-    }
-
-    public void bind(final String item) {
-        this.item = item;
+    void bind(final String item) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                text.setText(item);
+            }
+        });
     }
 }
