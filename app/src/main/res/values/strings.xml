@@ -2,4 +2,6 @@
     <string name="app_name">LW-ButterKnife-Example</string>
 
     <string name="str_basic">Changed Basic Text</string>
+    <string name="str_frag_a">Fragment without ButterKnife</string>
+    <string name="str_frag_b">Fragment with ButterKnife</string>
 </resources>

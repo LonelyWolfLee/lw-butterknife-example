@@ -19,7 +19,8 @@
         <activity android:name=".basic.BasicActivity" />
         <activity android:name=".basic.BasicWithButterKnifeActivity" />
         <activity android:name=".recycler.RecyclerActivity" />
-        <activity android:name=".recycler.RecyclerWithButterKnifeActivity"></activity>
+        <activity android:name=".recycler.RecyclerWithButterKnifeActivity" />
+        <activity android:name=".fragment.FragmentActivity"></activity>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.basic.BasicActivity;
 import pro.lonelywolf.example.butterknife.basic.BasicWithButterKnifeActivity;
+import pro.lonelywolf.example.butterknife.fragment.FragmentActivity;
 import pro.lonelywolf.example.butterknife.recycler.RecyclerActivity;
 import pro.lonelywolf.example.butterknife.recycler.RecyclerWithButterKnifeActivity;
 
@@ -43,11 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.opt_fragment)
     public void fragment() {
-
-    }
-
-    @OnClick(R.id.opt_fragment_butterknife)
-    public void fragmentVia() {
-
+        startActivity(new Intent(this, FragmentActivity.class));
     }
 }
