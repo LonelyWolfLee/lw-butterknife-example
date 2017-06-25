@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Example of basic recycler view usage using Butter Knife. (ViewHolder)
      * You can get controls from annotation and ButterKnife.bind(Object, View).
-     * You cannot use @OnClick annotation in this case.
-     * When you set logic of click method, (string) item is not defined yet.
      */
     @OnClick(R.id.opt_recycler_butterknife)
     public void recyclerVia() {

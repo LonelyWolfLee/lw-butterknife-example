@@ -7,13 +7,13 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import pro.lonelywolf.example.butterknife.R;
 
 class RecyclerWithButterKnifeViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.txt_item)
     TextView text;
-    @BindView(R.id.btn_item)
-    Button button;
+    String item;
 
     RecyclerWithButterKnifeViewHolder(View itemView) {
         super(itemView);
@@ -21,11 +21,15 @@ class RecyclerWithButterKnifeViewHolder extends RecyclerView.ViewHolder {
     }
 
     void bind(final String item) {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                text.setText(item);
-            }
-        });
+        this.item = item;
+    }
+
+    @OnClick(R.id.btn_item)
+    void clickButton() {
+        text.setText(getItem());
+    }
+
+    private String getItem() {
+        return this.item;
     }
 }
